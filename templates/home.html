@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+<div id='container'>
+<h1 class='head'>{{company_name}} Careers</h1>
+<style>
+  .head{
+    text-align: center;
+  }
+  .logo{
+    display: flex;
+    justify-content:center;
+    align-content:center;
+  }
+  #container{
+    
+  }
+</style>
+  <img src="/static/logo.png" alt="" height="220" width="" class='logo'>
+  <h2 class='h2'>About {{company_name}}</h2>
+  <style>
+    .h2{
+      text-align: center;
+    }
+    .p{
+      text-align: center;
+      text-align: justify;
+    }
+    .h22{
+      text-align: center;
+    }
+    .btn{
+      display: flex;
+      margin: auto;
+    }
+  </style>
+  <p class='p'centerrica is a financial services company serving the middle-income market in the U.S., Canada, Puerto Rico
+            and Guam. In 1977, we pioneered the “Buy Term and Invest the Difference” philosophy which solves two of the
+            biggest financial needs nearly every family faces – income protection with term life insurance and saving
+            for the future with a sound investments strategy.
+
+            Primerica uses our complimentary, confidential, and customized Financial Needs Analysis (FNA) to help
+            clients understand where they are financially and to map out a program to achieve their goals!</p>
+<h2 class='h22'>Job Openings</h2>
+<!--to do show the jobs here
+  -->
+<div>
+  {% for job in jobs %}
+    {% include 'jobitems.html' %}
+  {% endfor %}
+</div>
+<button class='btn'>Contact Us</button>
+</div>
+
+</body>
+</html>
