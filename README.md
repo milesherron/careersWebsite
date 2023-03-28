@@ -1,2 +1,2 @@
 # careersWebsite
-a career website for primerica
+a career website for primerica.

@@ -7,7 +7,7 @@ JOBS = [
     'id': 1,
     'title': 'Account Manager',
     'location': 'United States',
-    'salary': 'Commission'
+    'salary': 'Commission Based'
   },
 ]
 
